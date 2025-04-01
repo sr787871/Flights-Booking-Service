@@ -7,6 +7,8 @@ const app = express();
 // app.get('api/v1/blogs',(req,res)=>{
 
 // });
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 app.use('/api',apiRoutes);
 
